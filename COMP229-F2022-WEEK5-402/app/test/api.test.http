@@ -22,3 +22,49 @@ content-type: application/json
 GET http://localhost:3000/api/auth/logout HTTP/1.1
 content-type: application/json
 
+###
+GET http://localhost:3000/api/movies/list HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNWQ4ZTZkYzUwOGYzNWEzODY4M2U1ZCIsInVzZXJuYW1lIjoia2ltIiwiZW1haWxBZGRyZXNzIjoiamltQGdhbWlsLmNvbSIsImlhdCI6MTY2NzA4NjQ4OSwiZXhwIjoxNjY3NjkxMjg5fQ.PKhLSFhTC1X2mSHQBjaBk-uxfWQEUzz2xH57UWVIEGk
+
+###
+GET http://localhost:3000/api/movies/ 635db4fb3492fb6dfe75c571 HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNWQ4ZTZkYzUwOGYzNWEzODY4M2U1ZCIsInVzZXJuYW1lIjoia2ltIiwiZW1haWxBZGRyZXNzIjoiamltQGdhbWlsLmNvbSIsImlhdCI6MTY2NzA4NjQ4OSwiZXhwIjoxNjY3NjkxMjg5fQ.PKhLSFhTC1X2mSHQBjaBk-uxfWQEUzz2xH57UWVIEGk
+
+
+###
+POST http://localhost:3000/api/movies/add HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNWQ4ZTZkYzUwOGYzNWEzODY4M2U1ZCIsInVzZXJuYW1lIjoia2ltIiwiZW1haWxBZGRyZXNzIjoiamltQGdhbWlsLmNvbSIsImlhdCI6MTY2NzA4NjQ4OSwiZXhwIjoxNjY3NjkxMjg5fQ.PKhLSFhTC1X2mSHQBjaBk-uxfWQEUzz2xH57UWVIEGk
+
+
+{
+    "name": "Titanic 2",
+    "year": "2002",
+    "director": "James Cameron",
+    "genre": "Romance",
+    "runtime": 300
+}
+
+###
+PUT http://localhost:3000/api/movies/edit/635db4fb3492fb6dfe75c571 HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNWQ4ZTZkYzUwOGYzNWEzODY4M2U1ZCIsInVzZXJuYW1lIjoia2ltIiwiZW1haWxBZGRyZXNzIjoiamltQGdhbWlsLmNvbSIsImlhdCI6MTY2NzA4NjQ4OSwiZXhwIjoxNjY3NjkxMjg5fQ.PKhLSFhTC1X2mSHQBjaBk-uxfWQEUzz2xH57UWVIEGk
+
+
+{
+    "name": "Titanic",
+    "year": "2002",
+    "director": "James Cameron",
+    "genre": "Fantasy",
+    "runtime": 300
+}
+
+###
+DELETE http://localhost:3000/api/movies/delete/635db5b0e5ad015761b5ff1f HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNWQ4ZTZkYzUwOGYzNWEzODY4M2U1ZCIsInVzZXJuYW1lIjoia2ltIiwiZW1haWxBZGRyZXNzIjoiamltQGdhbWlsLmNvbSIsImlhdCI6MTY2NzA4NjQ4OSwiZXhwIjoxNjY3NjkxMjg5fQ.PKhLSFhTC1X2mSHQBjaBk-uxfWQEUzz2xH57UWVIEGk
+
+
+
