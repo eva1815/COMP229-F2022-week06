@@ -1,0 +1,24 @@
+POST http://localhost:3000/api/auth/login HTTP/1.1
+content-type: application/json
+
+{
+    "username": "kim",
+    "password": "123456"
+}
+
+###
+POST http://localhost:3000/api/auth/register HTTP/1.1
+content-type: application/json
+
+{
+    "username": "jim",
+    "password": "123456",
+    "emailAddress": "jim@gamil.com",
+    "displaytName": "jim al"
+
+}
+
+###
+GET http://localhost:3000/api/auth/logout HTTP/1.1
+content-type: application/json
+
